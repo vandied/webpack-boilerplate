@@ -1,4 +1,4 @@
-const path = require('path');
+const paths = require('./paths');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -7,17 +7,17 @@ module.exports = {
   mode: 'development',
   devServer: {
     historyApiFallback: true,
-    contentBase: path.resolve(__dirname, '../dist'),
+    contentBase: paths.build,
     open: true,
     compress: true,
     hot: true,
     port: 8080,
   },
   entry: {
-    main: path.resolve(__dirname, '../src/index.js'),
+    main: paths.src + '/index.js',
   },
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: paths.build,
     filename: '[name].bundle.js',
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      template: path.resolve(__dirname, '../src/index.html'), // шаблон
+      template: paths.src + '/index.html', // шаблон
       filename: 'index.html', // название выходного файла
     }),
   ],
