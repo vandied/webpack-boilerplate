@@ -1,7 +1,7 @@
 {
   "name": "webpack-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "build": "webpack --config config/webpack.prod.js",
     "start": "webpack serve --config config/webpack.dev.js",
@@ -15,6 +15,7 @@
     "@babel/core": "^7.13.13",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^8.1.0",
@@ -33,6 +34,9 @@
   },
   "dependencies": {
     "http-server": "^0.12.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "webpack-merge": "^5.7.3"
   },
   "repository": {
