@@ -1,16 +1,16 @@
 {
-  "name": "myWebpack",
+  "name": "webpack-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack serve",
+    "start": "webpack serve --config config/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Сборка проекта с помощью webpack и библиотеки пакетов NPM.",
   "devDependencies": {
     "@babel/core": "^7.13.13",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
@@ -25,7 +25,18 @@
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.28.0",
-    "webpack-cli": "^4.5.0",
+    "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandied/webpack-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vandied/webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/vandied/webpack-boilerplate#readme"
 }
