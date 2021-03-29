@@ -21,9 +21,16 @@ module.exports = merge(common, {
         test: /\.(scss|css)$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1, modules: {
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              importLoaders: 1,
+              modules: {
                 localIdentName: "[name]_[local]_[hash:base64:5]",
-              } } },
+              },
+            },
+            },
           { loader: 'postcss-loader', options: { sourceMap: true }},
           { loader: 'sass-loader', options: { sourceMap: true }},
         ],
