@@ -4,7 +4,7 @@
 
 ### В ней есть оптимизация и минимизация:
 
-1. JavaScript ([babel](https://babeljs.io/), [core-js](https://github.com/zloirock/core-js))
+1. TypeScript ([typescript](https://www.typescriptlang.org/))
 2. [SASS](https://sass-lang.com/)
 3. [PostCss](https://postcss.org/)
 4. HTML
