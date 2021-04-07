@@ -1,4 +1,5 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "outDir": "./dist/",
     "baseUrl": "./src",
@@ -27,7 +28,9 @@
     "strictBindCallApply": true,
     "noImplicitAny": false,
     "lib": ["es2017", "es2018", "dom", "esnext"],
-    "typeRoots" : ["./node_modules/@types","./src/types/*"]
+    "typeRoots" : ["./node_modules/@types","src/types/*"],
+    "isolatedModules": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist", ".test", ".coverage", "config"]
 }

@@ -1,5 +1,7 @@
 import React, {FC, useState} from "react";
 
+import scss from './styles/styles.scss';
+
 export const App: FC = () => {
     const [text, setText] = useState<string | null>(null);
 
@@ -8,7 +10,7 @@ export const App: FC = () => {
     }
 
     return (
-        <div>
+        <div className={scss.rootApp}>
             Привет, это базовая сборка веб-приложения на реакт
             <button onClick={handleClick}>Привет</button>
             <p>{text}</p>
