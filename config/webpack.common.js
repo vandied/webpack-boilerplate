@@ -1,7 +1,8 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const paths = require('./paths')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const paths = require('./paths');
 
 module.exports = {
   entry: paths.src + '/index.tsx',
@@ -37,8 +38,13 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      template: paths.src + '/index.html', // template file
-      filename: 'index.html', // output file
+      template: paths.src + '/index.html',
+      filename: 'index.html',
+    }),
+
+    new ESLintPlugin({
+      files: ['.', 'src'],
+      formatter: 'table',
     }),
 
   ],

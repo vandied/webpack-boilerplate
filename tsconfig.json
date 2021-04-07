@@ -32,5 +32,6 @@
     "isolatedModules": true,
     "esModuleInterop": true
   },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist", ".test", ".coverage", "config"]
 }
