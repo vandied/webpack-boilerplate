@@ -8,7 +8,9 @@
 2. [SASS](https://sass-lang.com/)
 3. [PostCss](https://postcss.org/)
 4. HTML
-5. [Webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
+5. Работа со шрифтами
+6. Проверка кода ESLint([ESLint](https://eslint.org/))
+7. [Webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
 ----
 ### Установка
 
@@ -47,4 +49,9 @@ npm i -g http-server
 Для запуска:
 ```bash
 cd dist && http-server
+```
+### Для проверки правильности кода:
+даем команду
+```bash
+npm run lint
 ```
