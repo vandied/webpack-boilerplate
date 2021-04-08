@@ -4,12 +4,12 @@
 
 ### В ней есть оптимизация и минимизация:
 
-1. TypeScript ([typescript](https://www.typescriptlang.org/))
+1. [TypeScript](https://www.typescriptlang.org/)
 2. [SASS](https://sass-lang.com/)
 3. [PostCss](https://postcss.org/)
 4. HTML
 5. Работа со шрифтами
-6. Проверка кода ESLint([ESLint](https://eslint.org/))
+6. Проверка кода [ESLint](https://eslint.org/)
 7. [Webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
 ----
 ### Установка
