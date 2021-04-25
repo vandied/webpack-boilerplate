@@ -6,8 +6,8 @@ export const App: FC = () => {
     const [text, setText] = useState<string | null>(null);
 
     const handleClick = (): void => {
-        setText('Это простой учебный конфиг')
-    }
+        setText('Это простой учебный конфиг');
+    };
 
     return (
         <div className={scss.rootApp}>
@@ -15,5 +15,5 @@ export const App: FC = () => {
             <button onClick={handleClick}>Привет</button>
             <p>{text}</p>
         </div>
-    )
+    );
 };
