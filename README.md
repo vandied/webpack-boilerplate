@@ -1,6 +1,6 @@
 # 📦  Шаблон сборки Webpack 5
 
-Сборка проекта с помощью [webpack](https://webpack.js.org/) и библиотеки пакетов NPM.
+Сборка проекта с помощью [Webpack](https://webpack.js.org/) и библиотеки пакетов NPM.
 
 ### В ней есть оптимизация и минимизация:
 
@@ -10,7 +10,9 @@
 4. HTML
 5. Работа со шрифтами
 6. Проверка кода [ESLint](https://eslint.org/)
-7. [Webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
+7. Сервер для development-сборок [Webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
+8. Форматирование кода [Prettier](https://prettier.io/)
+
 ----
 ### Установка
 
